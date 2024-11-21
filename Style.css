@@ -1,0 +1,46 @@
+:root {
+    --background-color: #121212;
+    --secondary-bg-color: #1F1F1F;
+    --buttons-bg-color: #64D8CB;
+    --text-main-color: #E0E0E0;
+    --text-second-color: #000000;
+    --border-color: #888888;
+    --bold-text: bold;
+    --poppins: 'Poppins';
+    --rethink-sans: 'Rethink Sans';
+}
+
+* {
+    box-sizing: border-box;
+    color: var(--text-main-color);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.lms-logo {
+    filter: invert(1);
+    -webkit-filter: invert(1);
+    width: 70vw;
+}
+
+.login-heading {
+    font-family: var(--poppins);
+}
+
+button {
+    background-color: var(--buttons-bg-color);
+    color: var(--text-second-color);
+    border: none;
+    border-radius: 5px;
+    font-weight: var(--bold-text);
+    font-family: var(--poppins);
+}
+
+.login-link {
+    font-size: 0.8em;
+    text-decoration-color: var(--buttons-bg-color);
+    -moz-text-decoration-color: var(--buttons-bg-color);
+    font-family: var(--rethink-sans);
+}
