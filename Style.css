@@ -38,6 +38,10 @@ button {
     font-family: var(--poppins);
 }
 
+.index-hero .index-side {
+    flex: 1;
+}
+
 .login-link {
     font-size: 0.8em;
     text-decoration-color: var(--buttons-bg-color);
@@ -53,10 +57,28 @@ button {
     font-family: var(--poppins);
 }
 
+.btn-close {
+    background-color: #E0E0E0;
+}
+
+.btn-close:focus {
+    outline: none;
+}
+
 form label {
     font-family: var(--rethink-sans);
 }
 
 form .buttons {
     font-family: var(--poppins);
+}
+
+@media (max-width: 768px) {
+    .index-hero {
+        width: 75%;
+    }
+
+    .index-form {
+        width: 25%;
+    }
 }
