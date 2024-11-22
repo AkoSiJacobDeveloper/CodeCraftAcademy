@@ -44,3 +44,19 @@ button {
     -moz-text-decoration-color: var(--buttons-bg-color);
     font-family: var(--rethink-sans);
 }
+
+.modal-content {
+    background-color: var(--secondary-bg-color);
+}
+
+.modal-title {
+    font-family: var(--poppins);
+}
+
+form label {
+    font-family: var(--rethink-sans);
+}
+
+form .buttons {
+    font-family: var(--poppins);
+}
