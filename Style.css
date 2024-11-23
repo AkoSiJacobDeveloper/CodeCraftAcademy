@@ -19,10 +19,15 @@ body {
     background-color: var(--background-color);
 }
 
+header {
+    position: fixed;
+}
+
 .lms-logo {
     filter: invert(1);
     -webkit-filter: invert(1);
-    width: 70vw;
+    width: 50vw;
+    margin-left: 10px;
 }
 
 .login-heading {
@@ -38,8 +43,18 @@ button {
     font-family: var(--poppins);
 }
 
-.index-hero .index-side {
+.index-hero .index-form {
     flex: 1;
+}
+
+
+.index-headlines h1 {
+    font-family: var(--poppins);
+    font-size: 2.5em;
+}
+
+.index-headlines p {
+    font-family: var(--rethink-sans);
 }
 
 .login-link {
@@ -74,11 +89,31 @@ form .buttons {
 }
 
 @media (max-width: 768px) {
+    .parent-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
     .index-hero {
-        width: 75%;
+      display: none;
+    }
+  
+    .index-form {
+      width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .lms-logo {
+        width: 15vw;
+    }
+
+    .index-hero {
+        width: 50%;
     }
 
     .index-form {
-        width: 25%;
+        width: 50%;
     }
 }
