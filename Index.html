@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="container-fluid p-3">
+    <header class="container-fluid p-3 header">
         <img class="lms-logo" src="lms-minicapstone.png" alt="CodeCraft Academy">
     </header>
     <div class="parent-container container d-flex align-items-center justify-content-between vh-100 p-0">
@@ -19,24 +19,28 @@
                 <p>Access all the tools you need to master HTML, CSS, and JavaScript. Log in to start building your future in web development.</p>
             </div>
         </div>
-        <div class="index-form d-flex justify-content-center align-items-center vh-100 flex-column gap-5 index-side">
+        <div class="index-form d-flex justify-content-center align-items-center vh-100 w-100 ">
             <div class="container">
-                <div class="container text-center">
-                    <h1 class="mb-4 mb-lg-3 mb-xl-4 login-heading">Get Started</h1>
-                    <div class="d-flex flex-column gap-2">
-                        <button class="w-100 p-2 p-md-3 p-lg-3" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
-                        <button class="w-100 p-2 p-md-3 p-lg-3" type="button" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</button>
+                <div class="wrapBtns rounded-1 d-flex justify-content-center align-items-center flex-column gap-5">
+                    <div class="container">
+                        <div class="container text-center d-flex flex-column gap-5">
+                            <h1 class="mb-4 mb-lg-3 mb-xl-4 login-heading">Get Started</h1>
+                            <div class="d-flex flex-column gap-2">
+                                <button class="w-100 p-2 p-md-3 p-lg-3 logSignBtn" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                                <button class="w-100 p-2 p-md-3 p-lg-3 logSignBtn" type="button" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container d-flex justify-content-center align-items-center gap-3">
+                        <a class="login-link" href="#">
+                            <p class="m-0">Terms of Use</p>
+                        </a>
+                        <div>|</div>
+                        <a class="login-link" href="#">
+                            <p class="m-0">Privacy Policy</p>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="container d-flex justify-content-center align-items-center gap-2">
-                <a class="login-link" href="#">
-                    <p class="m-0">Terms of Use</p>
-                </a>
-                <div>|</div>
-                <a class="login-link" href="#">
-                    <p class="m-0">Privacy Policy</p>
-                </a>
             </div>
         </div>
     </div>
@@ -53,11 +57,11 @@
                     <form>
                         <div>
                             <label for="loginEmail">Email Address</label>
-                            <input type="email" class="form-control p-3" id="loginEmail" placeholder="Enter your email">
+                            <input type="email" class="form-control p-3 input text-white" id="loginEmail" placeholder="Enter your email">
                         </div>
                         <div class="mb-3">
                             <label for="loginPassword">Password</label>
-                            <input type="password" class="form-control p-3" id="loginPassword" placeholder="Enter your password">
+                            <input type="password" class="form-control p-3 input text-white" id="loginPassword" placeholder="Enter your password">
                         </div>
                         <button type="submit" class="p-3 btn btn-primary w-100 buttons">Login</button>
                     </form>
@@ -78,15 +82,15 @@
                     <form>
                         <div>
                             <label for="signupEmail">Email Address</label>
-                            <input type="email" class="form-control p-3" id="signupEmail" placeholder="Enter your email">
+                            <input type="email" class="form-control p-3 input text-white" id="signupEmail" placeholder="Enter your email">
                         </div>
                         <div>
                             <label for="signupPassword">Password</label>
-                            <input type="password" class="form-control p-3" id="signupPassword" placeholder="Enter your password">
+                            <input type="password" class="form-control p-3 input text-white" id="signupPassword" placeholder="Enter your password">
                         </div>
                         <div class="mb-3">
                             <label for="signupConfirmPassword">Confirm Password</label>
-                            <input type="password" class="form-control p-3" id="signupConfirmPassword" placeholder="Confirm your password">
+                            <input type="password" class="form-control p-3 input text-white" id="signupConfirmPassword" placeholder="Confirm your password">
                         </div>
                         <button type="submit" class="p-3 btn btn-primary w-100 buttons">Signup</button>
                     </form>

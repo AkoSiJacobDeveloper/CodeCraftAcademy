@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
   
       alert("Login successful!");
-      window.location.href = "dashboard.html";
+      window.location.href = "Home.html";
   
       loginForm.reset();
       const loginModal = bootstrap.Modal.getInstance(document.getElementById("loginModal"));
