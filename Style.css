@@ -159,12 +159,18 @@ main {
 
 ul {
     list-style-type: none;
+    transition: color 0.3s;
 }
 
 ul a {
     text-decoration: none;
     font-family: var(--rethink-sans);
     color: var(--text-main-color);
+    transition: color 0.3s;
+}
+
+ul .nav-link:hover {
+    color: var(--buttons-bg-color)
 }
 
 .navigation a {
@@ -178,6 +184,20 @@ ul a {
 .navigation a:hover {
     color: var(--buttons-bg-color);
 }
+
+.nav-links a.active {
+    color: var(--buttons-bg-color);
+}
+
+nav a.active, .navigation a.active {
+    color: var(--buttons-bg-color);
+}
+
+/* 
+.nav-links a.active {
+    border-bottom: 2px solid #fff;
+    color: var(--text-color);
+} */
 
 .sidebarHeading {
     font-family: var(--poppins);

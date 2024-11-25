@@ -73,3 +73,31 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+// Active NavLinks
+function updateActiveLinks() {
+  const activePage = window.location.hash;
+
+  // Update nav bar links
+  document.querySelectorAll('nav a').forEach(link => {
+    if (link.getAttribute("href") === activePage) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+
+  // Update sidebar links
+  document.querySelectorAll('.navigation a').forEach(link => {
+    if (link.getAttribute("href") === activePage) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+}
+
+// Initial update on page load
+updateActiveLinks();
+
+// Update links when hash changes
+window.addEventListener('hashchange', updateActiveLinks);
