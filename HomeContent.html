@@ -4,8 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <h1>Hello, This is HomePage</h1>
+    <main class="container-fluid p-0 home-page d-flex flex-column gap-5">
+        <div class="d-flex justify-content-center align-items-center wrap-section">
+            <section class="container">
+                <span class="home-headline">Master HTML, CSS, and JavaScript – Your Journey to Web Development Starts Here!</span>
+                <p class="home-subheadline">Learn the fundamentals of web development with interactive lessons, hands-on coding challenges, and real-time feedback. Build your skills and create your first website today!</p>
+            </section>
+        </div>
+
+        <section class="container d-flex parent-card">
+            <div class="container w-25 features-card p-2 d-flex flex-column gap-4">
+                <div class="p-3 d-block">
+                    <i class="fa-solid fa-chart-bar features-icon"></i>
+                </div>
+                <div class="p-3 d-flex flex-column gap-4">
+                    <h5 class="features-heading text-center fw-bold">Progress Tracker</h5>
+                    <p class="features-text m-0">Keep track of your learning journey and see your progress grow with every lesson you complete!</p>
+                </div>
+            </div>
+            <div class="container w-25 features-card p-2 d-flex flex-column gap-4">
+                <div class="p-3 d-block">
+                    <i class="fa-solid fa-circle-question features-icon"></i>
+                </div>
+                <div class="p-3 d-flex flex-column gap-4">
+                    <h5 class="features-heading text-center fw-bold">Quizzes</h5>
+                    <p class="features-text m-0">Test your knowledge with fun and interactive quizzes designed to reinforce your learning.</p>
+                </div>
+            </div>
+            <div class="container w-25 features-card p-2 d-flex flex-column gap-4">
+                <div class="p-3 d-block">
+                    <i class="fa-solid fa-circle-info features-icon"></i>
+                </div>
+                <div class="p-3 d-flex flex-column gap-4">
+                    <h5 class="features-heading text-center fw-bold">FAQ</h5>
+                    <p class="features-text m-0">Find answers to common questions and get the help you need to succeed in your learning journey.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="Application.js"></script>
 </body>
 </html>

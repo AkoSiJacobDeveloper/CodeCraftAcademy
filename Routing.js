@@ -350,7 +350,6 @@ function loadContent() {
           console.error("Error loading content:", error);
         });
     } else {
-      // If the content is inline, use it directly
       appContent.innerHTML = route.content;
     }
   } else {
@@ -360,7 +359,6 @@ function loadContent() {
 
 window.addEventListener("hashchange", loadContent);
 
-// Load content on page load
 if (location.hash) {
   loadContent();
 } else {

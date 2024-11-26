@@ -71,13 +71,16 @@ document.addEventListener("DOMContentLoaded", () => {
       const loginModal = bootstrap.Modal.getInstance(document.getElementById("loginModal"));
       loginModal.hide();
     });
-  });
+});
   
-// Active NavLinks
+const logoutButton = document.getElementById("logoutBtn");
+
+logoutButton.addEventListener("click", function () {
+  window.location.href = "Index.html";
+})
+
 function updateActiveLinks() {
   const activePage = window.location.hash;
-
-  // Update nav bar links
   document.querySelectorAll('nav a').forEach(link => {
     if (link.getAttribute("href") === activePage) {
       link.classList.add('active');
@@ -86,7 +89,6 @@ function updateActiveLinks() {
     }
   });
 
-  // Update sidebar links
   document.querySelectorAll('.navigation a').forEach(link => {
     if (link.getAttribute("href") === activePage) {
       link.classList.add('active');
@@ -96,8 +98,5 @@ function updateActiveLinks() {
   });
 }
 
-// Initial update on page load
 updateActiveLinks();
-
-// Update links when hash changes
 window.addEventListener('hashchange', updateActiveLinks);

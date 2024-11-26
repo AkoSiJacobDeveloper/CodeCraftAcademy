@@ -19,8 +19,6 @@
 body {
     background-color: var(--background-color);
     margin: 0;
-
-
 }
 
 .header {
@@ -238,6 +236,53 @@ nav a.active, .navigation a.active {
     border-radius: 5px;
 }
 
+.wrap-section {
+    height: 80vh;
+}
+
+.home-headline {
+    font-family: var(--poppins);
+    font-size: 3em;
+    font-weight: var(--bold-text);
+    background: linear-gradient(to right, #64D8CB, #BCE4E0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.home-subheadline {
+    font-family: var(--rethink-sans);
+    width: 90%;
+}
+
+.features-card {
+    height: 50vh;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #101010, #131313);
+    box-shadow: 16px -16px 29px #0d0d0d,
+                -16px 16px 29px #171717;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.features-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px #64D8CB, 0 0 15px #64D8CB, 0 0 15px #64D8CB; 
+    background: linear-gradient(45deg, #131313, #1f1f1f);
+}
+
+.features-icon {
+    font-size: 2.5em;
+}
+
+.features-heading {
+    font-family: var(--poppins);
+    /* text-decoration: underline 1px solid var(--buttons-bg-color); */
+}
+
+.features-text {
+    font-family: var(--rethink-sans);
+}
+
 @media (min-width: 768px) {
     .lms-logo {
         width: 20vw;
@@ -251,8 +296,6 @@ nav a.active, .navigation a.active {
         width: 100%;
     }
 }
-
-
 
 @media (min-width: 1024px) {
     .lms-logo {
