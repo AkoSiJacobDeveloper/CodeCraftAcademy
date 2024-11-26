@@ -5,46 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
-    <main class="container-fluid p-0 home-page d-flex flex-column gap-5">
-        <div class="d-flex justify-content-center align-items-center wrap-section">
+    <div class="container-fluid p-0 home-page">
+        <div class="wrap-section d-flex justify-content-center align-items-center">
             <section class="container">
                 <span class="home-headline">Master HTML, CSS, and JavaScript – Your Journey to Web Development Starts Here!</span>
                 <p class="home-subheadline">Learn the fundamentals of web development with interactive lessons, hands-on coding challenges, and real-time feedback. Build your skills and create your first website today!</p>
             </section>
         </div>
 
-        <section class="container d-flex parent-card">
-            <div class="container w-25 features-card p-2 d-flex flex-column gap-4">
-                <div class="p-3 d-block">
-                    <i class="fa-solid fa-chart-bar features-icon"></i>
+        <section class="container-fluid">
+            <h1 class="my-5 text-center section-headings">Features</h1>
+            <section class="container d-flex flex-wrap justify-content-center gap-5">
+                <div class="col-md-3 col-sm-6 features-card p-2 d-flex flex-column gap-4">
+                    <div class="p-3 d-block">
+                        <i class="fa-solid fa-chart-bar features-icon"></i>
+                    </div>
+                    <div class="p-3 d-flex flex-column gap-4">
+                        <h5 class="features-heading text-center fw-bold">Progress Tracker</h5>
+                        <p class="features-text m-0">Keep track of your learning journey and see your progress grow with every lesson you complete!</p>
+                    </div>
                 </div>
-                <div class="p-3 d-flex flex-column gap-4">
-                    <h5 class="features-heading text-center fw-bold">Progress Tracker</h5>
-                    <p class="features-text m-0">Keep track of your learning journey and see your progress grow with every lesson you complete!</p>
+                <div class="col-md-3 col-sm-6 features-card p-2 d-flex flex-column gap-4">
+                    <div class="p-3 d-block">
+                        <i class="fa-solid fa-circle-question features-icon"></i>
+                    </div>
+                    <div class="p-3 d-flex flex-column gap-4">
+                        <h5 class="features-heading text-center fw-bold">Quizzes</h5>
+                        <p class="features-text m-0">Test your knowledge with fun and interactive quizzes designed to reinforce your learning.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="container w-25 features-card p-2 d-flex flex-column gap-4">
-                <div class="p-3 d-block">
-                    <i class="fa-solid fa-circle-question features-icon"></i>
+                <div class="col-md-3 col-sm-6 features-card p-2 d-flex flex-column gap-4">
+                    <div class="p-3 d-block">
+                        <i class="fa-solid fa-circle-info features-icon"></i>
+                    </div>
+                    <div class="p-3 d-flex flex-column gap-4">
+                        <h5 class="features-heading text-center fw-bold">FAQ</h5>
+                        <p class="features-text m-0">Find answers to common questions and get the help you need to succeed in your learning journey.</p>
+                    </div>
                 </div>
-                <div class="p-3 d-flex flex-column gap-4">
-                    <h5 class="features-heading text-center fw-bold">Quizzes</h5>
-                    <p class="features-text m-0">Test your knowledge with fun and interactive quizzes designed to reinforce your learning.</p>
+                <div class="col-md-3 col-sm-6 features-card p-2 d-flex flex-column gap-4">
+                    <div class="p-3 d-block">
+                        <i class="fa-solid fa-bookmark features-icon"></i>
+                    </div>
+                    <div class="p-3 d-flex flex-column gap-4">
+                        <h5 class="features-heading">Lesson Bookmarking</h5>
+                        <p class="features-text">Save your favorite lessons and revisit them anytime with just a click!</p>
+                    </div>
                 </div>
-            </div>
-            <div class="container w-25 features-card p-2 d-flex flex-column gap-4">
-                <div class="p-3 d-block">
-                    <i class="fa-solid fa-circle-info features-icon"></i>
+                <div class="col-md-3 col-sm-6 features-card p-2 d-flex flex-column gap-4">
+                    <div class="p-3 d-block">
+                        <i class="fa-solid fa-list-check features-icon"></i>
+                    </div>
+                    <div class="p-3 d-flex flex-column gap-4">
+                        <h5 class="features-heading text-center">To-Do List</h5>
+                        <p class="features-text">Stay organized and keep track of your learning tasks with an easy-to-use to-do list.</p>
+                    </div>
                 </div>
-                <div class="p-3 d-flex flex-column gap-4">
-                    <h5 class="features-heading text-center fw-bold">FAQ</h5>
-                    <p class="features-text m-0">Find answers to common questions and get the help you need to succeed in your learning journey.</p>
+                <div class="col-md-3 col-sm-6 features-card p-2 d-flex flex-column gap-4 mb-5">
+                    <div class="p-3 d-block">
+                        <i class="fa-solid fa-puzzle-piece features-icon"></i>
+                    </div>
+                    <div class="p-3 d-flex flex-column gap-4">
+                        <h5 class="features-heading text-center">Quizzes</h5>
+                        <p class="features-text">Challenge yourself with interactive quizzes and test your knowledge as you learn.</p>
+                    </div>
                 </div>
-            </div>
+            </section>
+        </section> 
+        
+        <section class="container-fluid">
+            <h1 class="my-5 text-center section-headings">How It Works</h1>
+            <section class="container d-flex flex-wrap justify-content-center gap-5">
+                <div class="col-md-3 col-sm-6 features-card p-2 d-flex flex-column gap-4 mb-5">
+                    <div class="p-3 d-block">
+                        <i class="fa-solid fa-1 features-icon"></i>
+                    </div>
+                    <div class="p-3 d-flex flex-column gap-4">
+                        <h5 class="features-heading text-center">Sign Up/Log In</h5>
+                        <p class="features-text">Get started by creating your account. It’s quick and easy—just enter your details and you’re ready to begin!</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 features-card p-2 d-flex flex-column gap-4 mb-5">
+                    <div class="p-3 d-block">
+                        <i class="fa-solid fa-2 features-icon"></i>
+                    </div>
+                    <div class="p-3 d-flex flex-column gap-4">
+                        <h5 class="features-heading text-center">Choose Learning Path</h5>
+                        <p class="features-text" id="features-text">Select the learning path that suits your goals—whether it’s HTML, CSS, or JavaScript, we’ve got you covered!</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 features-card p-2 d-flex flex-column gap-4 mb-5">
+                    <div class="p-3 d-block">
+                        <i class="fa-solid fa-3 features-icon"></i>
+                    </div>
+                    <div class="p-3 d-flex flex-column gap-4">
+                        <h5 class="features-heading text-center">Learn & Practice</h5>
+                        <p class="features-text">Dive into lessons, watch tutorials, and follow along with interactive exercises to sharpen your skills.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 features-card p-2 d-flex flex-column gap-4 mb-5">
+                    <div class="p-3 d-block">
+                        <i class="fa-solid fa-4 features-icon"></i>
+                    </div>
+                    <div class="p-3 d-flex flex-column gap-4">
+                        <h5 class="features-heading text-center">Track Your Progress</h5>
+                        <p class="features-text">Stay motivated by tracking your progress and celebrate your achievements as you complete each lesson!</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 features-card p-2 d-flex flex-column gap-4 mb-5">
+                    <div class="p-3 d-block">
+                        <i class="fa-solid fa-5 features-icon"></i>
+                    </div>
+                    <div class="p-3 d-flex flex-column gap-4">
+                        <h5 class="features-heading text-center">Test Your Knowledge</h5>
+                        <p class="features-text" id="features-text">Challenge yourself with quizzes to reinforce what you've learned and make sure you’re ready for the next step.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 features-card p-2 d-flex flex-column gap-4 mb-5">
+                    <div class="p-3 d-block">
+                        <i class="fa-solid fa-6 features-icon"></i>
+                    </div>
+                    <div class="p-3 d-flex flex-column gap-4">
+                        <h5 class="features-heading text-center">Get Help & Support</h5>
+                        <p class="features-text">Need help? Our FAQs and support team are here to guide you through any challenges you encounter.</p>
+                    </div>
+                </div>
+            </section>
         </section>
-    </main>
+        
+        
+
+        <!-- <section class="container my-5">
+            hello
+        </section> -->
+    </div>
 
     <script src="Application.js"></script>
 </body>
