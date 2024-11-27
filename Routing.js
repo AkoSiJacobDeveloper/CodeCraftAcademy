@@ -337,8 +337,6 @@ function loadContent() {
 
   if (route) {
     document.title = route.title;
-    
-    // Check if the content is a URL
     if (route.contentUrl) {
       fetch(route.contentUrl)
         .then(response => response.text())

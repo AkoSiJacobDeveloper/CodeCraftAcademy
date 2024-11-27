@@ -283,7 +283,6 @@ nav a.active, .navigation a.active {
 
 .features-heading {
     font-family: var(--poppins);
-    /* text-decoration: underline 1px solid var(--buttons-bg-color); */
 }
 
 .features-text {
@@ -292,6 +291,54 @@ nav a.active, .navigation a.active {
 
 #features-text {
     font-size: 0.8em;
+}
+
+.course-logo {
+    width: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.course-card {
+    position: relative;
+    overflow: hidden;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+.course-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 0.9em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.course-card:hover .course-text {
+    opacity: 1;
+}
+
+.course-card:hover .course-logo {
+    opacity: 0;
+}
+
+.course-heading {
+    font-family: var(--poppins);
+    font-weight: var(--bold-text);
+}
+
+.course-description {
+    font-family: var(--rethink-sans);
 }
 
 @media (min-width: 768px) {
