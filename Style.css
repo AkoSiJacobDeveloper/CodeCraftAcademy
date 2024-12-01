@@ -256,6 +256,10 @@ nav a.active, .navigation a.active {
     background-clip: text;
 }
 
+#home-headline {
+    font-size: 4em;
+}
+
 .home-subheadline {
     font-family: var(--rethink-sans);
     width: 90%;
@@ -391,11 +395,144 @@ summary {
 .faq-answer-container {
     background-color: var(--secondary-bg-color);
 }
+/* 
+.inner-container {
+    border: 1px solid var(--buttons-bg-color);
+} */
+
+.introduction-text-container {
+    border-radius: 10px;
+    background: linear-gradient(45deg, #101010, #131313);
+    box-shadow: 16px -16px 29px #0d0d0d,
+                -16px 16px 29px #171717;
+}
+
+.introduction-question {
+    border-bottom: 2px solid var(--buttons-bg-color);
+    font-family: var(--poppins);
+    display: inline-block;
+}
+
+.introduction-answer {
+    font-family: var(--rethink-sans);
+}
+
+.mission-vision-heading {
+    border-bottom: 2px solid var(--buttons-bg-color);
+    display: inline-block;
+}
+
+.what-container {
+    border-radius: 10px;
+    background: linear-gradient(45deg, #101010, #131313);
+    box-shadow: 16px -16px 29px #0d0d0d,
+                -16px 16px 29px #171717;
+}
+
+.what-text {
+    font-family: var(--rethink-sans);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.what-img {
+    width: 100%;
+    height: 100%;
+}
+
+.message-container {
+    border-radius: 10px;
+    background: linear-gradient(45deg, #101010, #131313);
+    box-shadow: 16px -16px 29px #0d0d0d,
+                -16px 16px 29px #171717;
+}
+
+.form label {
+    font-family: var(--poppins);
+}
+
+.form input {
+    border: none;
+    outline: none;
+}
+
+.form input:focus {
+    border-color: var(--buttons-bg-color);
+    box-shadow: 0 0 10px #64D8CB;
+}
+
+.message-area {
+    background: none;
+    resize: none;
+    border: none;
+    background-color: #1f1f1f;
+}
+
+.message-area:focus {
+    border-color: var(--buttons-bg-color);
+    box-shadow: 0 0 10px #64D8CB;
+}
+
+.message-area::placeholder {
+    color: var(--text-main-color);
+}
+
+.submitBtn {
+    background: none;
+    outline: none;
+    border: none;
+    background-color: var(--buttons-bg-color);
+    color: #000;
+    font-weight: var(--bold-text);
+    font-family: var(--poppins);
+}
 
 .footer-text {
     font-family: var(--rethink-sans);
     font-size: 0.6em;
 }
+
+.sidebar-headlines {
+    font-family: var(--poppins);
+    font-weight: var(--bold-text);
+}
+
+.section-headings {
+    font-family: var(--poppins);
+    border-bottom: 2px solid var(--buttons-bg-color);
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: var(--bold-text);
+}
+
+.section-contents-texts {
+    font-family: var(--rethink-sans);
+    font-size: 1.1em;
+}
+
+.list {
+    list-style-type: disc;
+    font-family: var(--rethink-sans);
+}
+
+.sample-syntax-text {
+    font-family: var(--poppins);
+}
+
+.sample-syntax-container {
+    background: linear-gradient(45deg, #101010, #131313);
+    box-shadow: 16px -16px 29px #0d0d0d,
+                -16px 16px 29px #171717;
+}
+
+.setting-up-steps {
+    font-family: var(--poppins);
+}
+
+ol {
+    font-family: var(--rethink-sans);
+}
+
 @media (min-width: 768px) {
     .lms-logo {
         width: 20vw;

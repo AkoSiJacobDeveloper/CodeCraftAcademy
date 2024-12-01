@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Contact</h1>
+    <div class="container-fluid p-0 contact-page">
+        <div class="wrap-section d-flex justify-content-center align-items-center">
+            <section class="container">
+                <span class="home-headline">We’d Love to Hear From You!"</span>
+                <p class="home-subheadline">Have questions, feedback, or need assistance? Fill out the form below, and we’ll get back to you as soon as possible!</p>
+            </section>
+        </div>
+
+        <section class="container-fluid d-flex justify-content-center align-items-center ">
+            <div class="container p-4 message-container">
+                <form @submit.prevent class="form">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control p-3 input text-white" id="name" placeholder="John Doe">
+
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control p-3 input text-white" id="email" placeholder="johndoe@gmail.com">
+
+                    <label for="subject">Subject</label>
+                    <input type="text" class="form-control p-3 input text-white" id="subject" placeholder="Concern">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" class="form-control p-3 input text-white message-area" id="message" rows="4" cols="50" placeholder="Type Here..."></textarea>
+
+                    <button type="submit" class="submitBtn mt-4 w-100 p-3 rounded-1">Send</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="d-flex justify-content-center mt-5">
+            <span class="footer-text">Copyright &copy; 2024 CodeCraft Academy</span>
+        </footer>
+    </div>
 
     <script src="Routing.js"></script>
 </body>

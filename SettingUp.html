@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting Up Your Environment</title>
+</head>
+<body>
+    <main class="container-fluid">
+        <h1 class="sidebar-headlines">Setting Up Your Environment</h1>
+
+        <section class="container p-0 my-5">
+            <p class="section-contents-texts">Before diving into the exciting world of web development, it's important to ensure your computer is set up with the necessary tools to create and test your projects effectively. This section will guide you through the process of setting up a beginner-friendly environment for learning and working with HTML, CSS, and JavaScript.</p>
+        </section>
+
+        <hr>
+
+        <section class="container p-0 my-5">
+            <ol>
+                <li>
+                    <p class="m-0 setting-up-steps"><strong>Text Editor or Integrated Development Environment (IDE)</strong></p>
+                    <p class="section-contents-texts">A text editor or IDE is where you’ll write your code. While there are many options available,<strong> Visual Studio Code (VS Code) </strong> widely recommended for its beginner-friendly features, extensive customization options, and a rich ecosystem of extensions.</p>
+
+                    <p class="section-contents-texts">Steps to Install VS Code: </p>
+
+                    <ol>
+                        <li>
+                            Visit the Visual Studio Code website.
+                        </li>
+                        <li>
+                            Download the installer for your operating system (Windows, macOS, or Linux).
+                        </li>
+                        <li>
+                            Run the installer and follow the on-screen instructions.
+                        </li>
+                        <li>
+                            Launch VS Code and customize it by installing useful extensions like:
+
+                            <ul>
+                                <li class="list">Prettier (for code formatting).
+                                </li>
+                                <li class="list">Live Server (to preview your HTML files in real-time).
+                                </li>
+                                <li class="list">HTML CSS Support (for improved IntelliSense for HTML and CSS).
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+
+                <hr>
+
+                <li>
+                    <p class="m-0 setting-up-steps"><strong>Web Browser</strong></p>
+                    <p class="section-contents-texts">A modern web browser is essential to view and test your web pages. <strong>Google Chrome</strong> is highly recommended due to its robust developer tools, but browsers like Firefox or Edge are also excellent choices.</p>
+
+                    <p class="section-contents-texts">Steps to Install Google Chrome: </p>
+
+                    <ol>
+                        <li>Visit the Google Chrome website.</li>
+                        <li>Download and install the browser for your operating system.</li>
+                        <li>Open Chrome, and you’re ready to use it for testing and debugging your projects.</li>
+                    </ol>
+
+                    <p class="section-contents-texts mt-3">How to Use Developer Tools in Chrome:</p>
+
+                    <ul>
+                        <li class="list">Right-click anywhere on a webpage and select <strong>Inspect</strong>.
+                        </li>
+                        <li class="list">Use the <strong>Elements</strong> tab to view and edit HTML and CSS in real-time.
+                        </li>
+                        <li class="list">Use the <strong>Console</strong> tab to test JavaScript code and view errors.
+                        </li>
+                    </ul>
+                </li>
+
+                <hr>
+
+                <li>
+                    <p class="m-0 setting-up-steps"><strong>Setting Up a Project Folder</strong></p>
+                    <p class="section-contents-texts">To stay organized, you should create a dedicated folder for each project. This is where you’ll save your HTML, CSS, and JavaScript files.</p>
+
+                    <p class="section-contents-texts">Steps: </p>
+
+                    <ol>
+                        <li>Create a new folder on your desktop or in a convenient location.</li>
+                        Example: MyFirstProject.
+                        <li>Inside this folder, create three subfolders: </li>
+                        <ul>
+                            <li class="list">html (for HTML files).</li>
+                            <li class="list">css (for CSS files).</li>
+                            <li class="list">js (for JavaScript files).</li>
+                        </ul>
+                        <li>Start by creating a basic index.html file in the html folder. This will serve as the main entry point for your project.</li>
+                    </ol>
+                </li>
+
+                <hr>
+
+                <li>
+                    <p class="m-0 setting-up-steps"><strong>Previewing Your Work with Live Server</strong></p>
+                    <p class="section-contents-texts">One of the challenges for beginners is refreshing the browser manually to see updates. By using the <strong>Live Server </strong> extension in VS Code, you can see changes instantly.</p>
+
+                    <p class="section-contents-texts">How to Set Up Live Server: </p>
+
+                    <ol>
+                        <li>
+                            Open VS Code and navigate to the Extensions view (Ctrl + Shift + X or Cmd + Shift + X on macOS).
+                        </li>
+                        <li>
+                            Search for <strong>Live Server </strong> and install it.
+                        </li>
+
+                        <li>
+                            Open your HTML file in VS Code, then right-click and select Open with <strong>Live Server </strong>.
+                        </li>
+
+                        <li>
+                            Your default web browser will open, showing your webpage. Any changes you save will automatically update in the browser.
+                        </li>
+                    </ol>
+                </li>
+
+                <hr>
+
+                <li>
+                    <p class="m-0 setting-up-steps"><strong>Understanding File Structure and Connections</strong></p>
+                    <p class="section-contents-texts">A typical web development project involves linking HTML, CSS, and JavaScript files together. Here's how to set up your first project structure:
+                    </p>
+
+                    <ul>
+                        <li class="list mb-2">Create an index.html file in the html folder with this basic structure: </li>
+                        <div class="sample-syntax-container">
+                            <pre>
+                                &lt;!DOCTYPE html&gt;
+                                &lt;html lang="en"&gt;
+                                &lt;head&gt;
+                                    &lt;meta charset="UTF-8"&gt;
+                                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                    &lt;title&gt;My First Project&lt;/title&gt;
+                                    &lt;link rel="stylesheet" href="../css/styles.css"&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;h1&gt;Welcome to My Project&lt;/h1&gt;
+                                    &lt;script src="../js/scripts.js"&gt;&lt;/script&gt;
+                                &lt;/body&gt;
+                                &lt;/html&gt;
+                            </pre>     
+                        </div>
+                        <li class="list mb-2">Create a styles.css file in the css folder: </li>
+                        <div class="sample-syntax-container">
+                            <pre>
+                                body {
+                                    font-family: Arial, sans-serif;
+                                    background-color: #f0f0f0;
+                                    text-align: center;
+                                    margin: 0;
+                                    padding: 20px;
+                                }
+                                h1 {
+                                    color: #333;
+                                }
+                            </pre>
+                        </div>                            
+                        <li class="list mb-2">Create a scripts.js file in the js folder: </li>
+                        <div class="sample-syntax-container">
+                            <pre>
+                                console.log("Welcome to My First Project!");
+                            </pre>  
+                        </div>    
+                    </ul>
+                </li>
+                When you open the index.html file in your browser (or via Live Server), you’ll see the styled text and can check the JavaScript console in the browser’s Developer Tools for the log message.
+
+                <hr>
+
+                <li>
+                    <p class="m-0 setting-up-steps"><strong>Optional: Installing Git for Version Control</strong></p>
+                    <p class="section-contents-texts">Version control is a critical skill for developers. Installing <strong>Git</strong> allows you to track changes in your projects, collaborate with others, and back up your work.
+                    </p>
+
+                    <p class="section-contents-texts">Steps to Install Git: </p>
+
+                    <ol>
+                        <li>
+                            Visit the Git website and download the installer for your OS.
+                        </li>
+
+                        <li>
+                            Follow the installation instructions.
+                        </li>
+
+                        <li>
+                            Set up Git by running these commands in your terminal:
+                        </li>
+                        <div class="sample-syntax-container d-flex justify-content-center">
+                            git config --global user.name "Your Name"
+                            <br>
+                            git config --global user.email "your.email@example.com"
+                        </div>
+                        <li>
+                            Optionally, sign up for a GitHub account to store your projects online.
+                        </li>
+                    </ol>
+                </li>
+
+                <hr>
+
+                <li>
+                    <p class="m-0 setting-up-steps"><strong>Additional Tools to Consider</strong></p>
+                    <p class="section-contents-texts">While the basics are enough to get started, here are some additional tools you might find useful as you progress:</p>
+
+                    <ul>
+                        <li class="list">
+                            <p><strong>Node.js and npm: </strong>For running JavaScript outside the browser and managing libraries.
+                            </p>
+                        </li>
+                        <li class="list">
+                            <p><strong>CodePen or JSFiddle: </strong>Online editors to quickly experiment with HTML, CSS, and JavaScript.</p>
+                        </li>
+                    </ul>
+                </li>
+
+                <hr>
+            </ol>
+
+            <section class="container p-0 my-5">
+                <h3 class="section-headings">Conclusion</h3>
+                <p class="section-contents-texts">By completing these steps, you’ll have everything you need to start creating and testing your web development projects. A well-prepared environment will save you time, keep you organized, and make your learning journey much smoother!</p>
+            </section>
+        </section>
+
+        <footer class="d-flex justify-content-center mt-5">
+            <span class="footer-text">Copyright &copy; 2024 CodeCraft Academy</span>
+        </footer>
+    </main>
+</body>
+</html>

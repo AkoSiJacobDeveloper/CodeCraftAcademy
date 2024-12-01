@@ -1,45 +1,27 @@
 const routes = {
   home: {
     title: "Home",
-    // content: `
-    //   <h1>Welcome to the Home Page</h1>
-    //   <p>This is the home page content.</p>
-    // `
     contentUrl: './HomeContent.html'
   },
   about: {
     title: "About",
-    content: `
-      <h1>About Us</h1>
-      <p>This page is about us.</p>
-    `
+    contentUrl: './About.html'
   },
   contact: {
     title: "Contact",
-    content: `
-      <h1>Contact Us</h1>
-      <p>Reach us at contact@example.com.</p>
-    `
+    contentUrl: './Contact.html'
   },
   profile: {
     title: "Profile",
-    content: `
-      <h1>Profile</h1>
-    `
+    contentUrl: './Profile.html'
   },
   introduction: {
     title: "Introduction",
-    content: `
-      <h1>Introduction</h1>
-      <p>Welcome to the introduction page.</p>
-    `
+    contentUrl: './Introduction.html'
   },
   "setup-environment": {
     title: "Setting Up Your Environment",
-    content: `
-      <h1>Setting Up Your Environment</h1>
-      <p>Here's how to set up your environment.</p>
-    `
+    contentUrl: './SettingUp.html'
   },
   "html-introduction": {
     title: "Introduction to HTML",
