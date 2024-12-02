@@ -531,6 +531,11 @@ ol {
     font-family: var(--rethink-sans);
 }
 
+.lesson-heading {
+    font-family: var(--poppins);
+    font-weight: var(--bold-text);
+}
+
 @media (min-width: 768px) {
     .lms-logo {
         width: 20vw;

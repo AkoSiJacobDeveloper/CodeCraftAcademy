@@ -25,10 +25,7 @@ const routes = {
   },
   "html-introduction": {
     title: "Introduction to HTML",
-    content: `
-      <h1>Introduction to HTML</h1>
-      <p>HTML basics overview.</p>
-    `
+    contentUrl: './HtmlIntroduction.html'
   },
   "text-elements": {
     title: "Text Elements and Structure",
