@@ -499,8 +499,6 @@ summary {
 
 .section-headings {
     font-family: var(--poppins);
-    border-bottom: 2px solid var(--buttons-bg-color);
-    display: inline-block;
     margin-bottom: 20px;
     font-weight: var(--bold-text);
 }
