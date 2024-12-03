@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links and Images</title>
+</head>
+<body>
+    <main class="container-fluid">
+        <h1 class="sidebar-headlines">Links and Images</h1>
+
+        <section class="container p-0 my-5">
+            <h3 class="lesson-heading">Adding Links</h3>
+            <p class="section-contents-texts">Links are one of the most important features of the web. They allow users to navigate between pages or sections of the same page. Links are created using the <code>&lt;a&gt;</code> (anchor) tag.
+            </p>
+
+            <h3 class="lesson-heading">Basic Link Syntax</h3>
+            <div class="sample-syntax-container p-2">
+                <p class="m-0">&lt;a href="URL"&gt;Link Text&lt;/a&gt;</p>
+            </div>
+
+            <ul>
+                <li class="list"> href: Specifies the URL (Uniform Resource Locator) of the page you want to link to. </li>
+                <li class="list">
+                    <p><strong>Link Text: </strong>The clickable text visible to users.</p>
+                </li>
+            </ul>
+
+            <p><strong>Example: External and Internal Links</strong></p>
+            <div class="sample-syntax-container">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                        &lt;html&gt;
+                        &lt;head&gt;
+                            &lt;title&gt;HTML Links&lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                            &lt;h1&gt;Links Example&lt;/h1&gt;
+                            &lt;p&gt;&lt;a href="https://www.google.com" target="_blank"&gt;Visit Google&lt;/a&gt;&lt;/p&gt;
+                            &lt;p&gt;&lt;a href="about.html"&gt;Go to About Page&lt;/a&gt;&lt;/p&gt;
+                        &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </section> 
+
+        <hr>
+
+        <section class="container p-0 my-5">
+            <h3 class="lesson-heading">Adding Images</h3>
+            <p class="section-contents-texts">
+                Images are added using the  <code>&lt;img&gt;</code> tag. This tag is self-closing, meaning it doesn't require a closing tag.
+            </p>
+            <p><strong>Basic Image Syntax</strong></p>
+            <div class="sample-syntax-container p-2">
+                &lt;img src="image-url" alt="description" /&gt;
+            </div>
+            <ul>
+                <li class="list"> <strong>src</strong>: Specifies the path to the image.</li>
+                <li class="list"> <strong>alt</strong>: Provides alternative text for the image if it can't be displayed.</li>
+            </ul>
+
+            <p><strong>Example: </strong></p>
+            <div class="sample-syntax-container">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                      &lt;head&gt;
+                        &lt;title&gt;HTML Links&lt;/title&gt;
+                      &lt;/head&gt;
+                      &lt;body&gt;
+                        &lt;h1&gt;Links Example&lt;/h1&gt;
+                        &lt;p&gt;&lt;a href="https://www.google.com" target="_blank"&gt;Visit Google&lt;/a&gt;&lt;/p&gt;
+                        &lt;p&gt;&lt;a href="about.html"&gt;Go to About Page&lt;/a&gt;&lt;/p&gt;
+                      &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="container p-0 my-5">
+            <h3 class="lesson-heading">Combining Links and Images</h3>
+            <p class="section-contents-texts">
+                You can make images clickable by wrapping them inside an <code>&lt;a&gt;</code> tag.
+            </p>
+            <p><strong>Example: </strong></p>
+            <div class="sample-syntax-container">
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                      &lt;head&gt;
+                          &lt;title&gt;HTML Links and Images&lt;/title&gt;
+                      &lt;/head&gt;
+                      &lt;body&gt;
+                          &lt;h1&gt;Clickable Image Example&lt;/h1&gt;
+                          &lt;a href="https://www.example.com" target="_blank"&gt;
+                          &lt;img src="https://via.placeholder.com/150" alt="Example Website" /&gt;
+                          &lt;/a&gt;
+                      &lt;/body&gt;
+                      &lt;/html&gt;
+                  </code></pre>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="container p-0 my-5">
+            <h3 class="lesson-heading">Let's Practice</h3>
+            <ol>
+                <li>
+                    <p class="m-0">Create a new HTML file named links-and-images.html.</p>
+                </li>
+                <li>
+                    <p class="m-0">Add</p>
+                    <ul>
+                        <li class="list">A link to an external website.</li>
+                        <li class="list">A link to a local file (e.g., contact.html).</li>
+                        <li class="list">An image with alternative text.</li>
+                        <li class="list">A clickable image link.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section class="container p-0 my-5">
+            <h3 class="lesson-heading">Key Takeaways: </h3>
+            <ul>
+                <li class="list">Use <code>&lt;a&gt;</code> for links and the href attribute for the URL.
+                </li>
+                <li class="list">Use <code>&lt;img&gt;</code>  for images and always include an alt attribute for accessibility.
+                </li>
+                <li class="list">Combine links and images for interactive elements.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <p class="section-contents-texts">Next up: <strong>Lists In HTML</strong> – Learn how to create ordered, unordered, and definition lists!</p>
+        
+        <footer class="d-flex justify-content-center mt-5">
+            <span class="footer-text">Copyright &copy; 2024 CodeCraft Academy</span>
+        </footer>
+
+    </main>
+</body>
+</html>

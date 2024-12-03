@@ -29,17 +29,11 @@ const routes = {
   },
   "text-elements": {
     title: "Text Elements and Structure",
-    content: `
-      <h1>Text Elements and Structure</h1>
-      <p>Learn about text elements in HTML.</p>
-    `
+    contentUrl: './TextElements.html'
   },
   "links-images": {
     title: "Links and Images",
-    content: `
-      <h1>Links and Images</h1>
-      <p>How to use links and images in HTML.</p>
-    `
+    contentUrl: './LinksImages.html'
   },
   "lists": {
     title: "Lists: Unordered and Ordered",
