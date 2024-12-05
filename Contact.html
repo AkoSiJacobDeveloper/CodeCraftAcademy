@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="Style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> 
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script> <!-- EmailJS SDK -->
+
 </head>
 <body>
     <div class="container-fluid p-0 contact-page">
         <div class="wrap-section d-flex justify-content-center align-items-center">
             <section class="container">
-                <span class="home-headline">We’d Love to Hear From You!"</span>
+                <span class="home-headline">We’d Love to Hear From You!</span>
                 <p class="home-subheadline">Have questions, feedback, or need assistance? Fill out the form below, and we’ll get back to you as soon as possible!</p>
             </section>
         </div>
 
         <section class="container-fluid d-flex justify-content-center align-items-center ">
             <div class="container p-4 message-container">
-                <form @submit.prevent class="form">
+                <form onsubmit="sendEmail(event)" class="form">
                     <label for="name">Full Name</label>
                     <input type="text" class="form-control p-3 input text-white" id="name" placeholder="John Doe">
 
@@ -42,5 +44,6 @@
     </div>
 
     <script src="Routing.js"></script>
+    <script src="Email.js"></script>
 </body>
 </html>
